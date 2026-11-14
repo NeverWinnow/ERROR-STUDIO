@@ -1196,7 +1196,7 @@ local function makeOrbText(name, transparency)
     label.Size = UDim2.new(1, 0, 1, 0)
     label.BackgroundTransparency = 1
     label.Font = Enum.Font.Michroma
-    label.Text = "ADMIN"
+    label.Text = "AD"
     label.TextSize = 20
     label.TextColor3 = Color3.fromRGB(255, 255, 255)
     label.TextTransparency = transparency
