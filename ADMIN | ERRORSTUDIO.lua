@@ -4,7 +4,7 @@ local ProximityPromptService = game:GetService("ProximityPromptService")
 local LocalPlayer = Players.LocalPlayer
 local Hub = {Running = true, Flags = {Farm = false}, Conns = {}, Busy = {}}
 getgenv().TwoK = Hub
-local UI = loadstring(game:HttpGet("https://ai.zeinstore.xyz/prism.luau"))()
+local UI = loadstring(game:HttpGet("https://raw.githubusercontent.com/NeverWinnow/ERROR-STUDIO/refs/heads/main/Lodging"))()
 Hub.UI = UI
 function Hub.Stop()
     Hub.Running = false
