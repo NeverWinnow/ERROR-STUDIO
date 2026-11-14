@@ -12,8 +12,8 @@ function Hub.Stop()
     for _, c in ipairs(Hub.Conns) do pcall(function() c:Disconnect() end) end
     pcall(function() UI:Destroy() end)
 end
-UI:SetTitle("2K | ฟาร์มก่อสร้าง")
-local Tab = UI:Tab("ฟาร์ม")
+UI:SetTitle("ADMIN | ERROR STUDIO")
+local Tab = UI:Tab("TEST")
 local S = Tab:Section("เก็บงานก่อสร้าง")
 S:Label("ไม่วาร์ป • เดินเข้าใกล้จุดงานแล้วระบบกดค้างตาม HoldDuration")
 S:Toggle({Name = "ฟาร์มอัตโนมัติในระยะ", Desc = "ทำงานเฉพาะพรอมป์ที่อยู่ในระยะที่เกมกำหนด", Default = false, Callback = function(v) Hub.Flags.Farm = v end})
