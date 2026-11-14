@@ -15,6 +15,7 @@ end
 UI:SetTitle("ADMIN | ERROR STUDIO")
 local Tab = UI:Tab("TEST")
 local S = Tab:Section("เก็บงานก่อสร้าง")
+S:Label("ไม่วาร์ป • เดินเข้าใกล้จุดงานแล้วระบบกดค้างตาม HoldDuration")
 
 -- เพิ่มการแจ้งเตือนใน Callback ของ Toggle
 S:Toggle({
