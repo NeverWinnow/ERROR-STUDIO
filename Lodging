@@ -762,32 +762,6 @@ local function makeTopButton(textChar, order, onClick)
     return btn
 end
 
-makeTopButton("−", 1, function()
-    userScaleMultiplier = math.clamp(userScaleMultiplier - 0.10, 0.40, 1.50)
-    updateViewportScaling()
-    saveSettings()
-    UI:SetStatus("ปรับขนาดหน้าต่าง: " .. math.round(userScaleMultiplier * 100) .. "%")
-end)
-
-makeTopButton("+", 2, function()
-    userScaleMultiplier = math.clamp(userScaleMultiplier + 0.10, 0.40, 1.50)
-    updateViewportScaling()
-    saveSettings()
-    UI:SetStatus("ปรับขนาดหน้าต่าง: " .. math.round(userScaleMultiplier * 100) .. "%")
-end)
-
-local minimizeBtn = makeTopButton("▁", 3, function()
-    UI:Minimize()
-end)
-
-makeTopButton("▾", 4, function()
-    UI:Toggle(false)
-end)
-
-makeTopButton("✕", 5, function()
-    UI:Destroy()
-end)
-
 -- Container Drag Logic via TOP slab
 clampContainer = function(wanted)
     local vp = camera and camera.ViewportSize or Vector2.new(1280, 720)
