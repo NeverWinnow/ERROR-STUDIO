@@ -1,4 +1,4 @@
-if getgenv().TwoK then pcall(getgenv().TwoK.Stop) end
+If getgenv().TwoK then pcall(getgenv().TwoK.Stop) end
 local Players = game:GetService("Players")
 local ProximityPromptService = game:GetService("ProximityPromptService")
 local LocalPlayer = Players.LocalPlayer
