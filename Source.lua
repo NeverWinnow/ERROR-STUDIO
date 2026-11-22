@@ -1097,7 +1097,7 @@ library.configuration = {
    },
 };
 
-local UI = library.new("METAWARE **TESTING_GAME**");
+local UI = library.new("[ADMIN] ERROR STUDIO");
 local UI_TAB = UI.AddTab("Server")
 local UI_SECTION = UI_TAB.AddSection();
 
