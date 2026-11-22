@@ -1097,14 +1097,15 @@ library.configuration = {
    },
 };
 
-local UI = library.new("[ADMIN] ERROR STUDIO");
-local UI_TAB = UI.AddTab("Server")
-local UI_SECTION = UI_TAB.AddSection();
+local UI = library.new("[ADMIN] ERROR STUDIO")
 
-local UI_SUBSECTION = UI_SECTION.AddSubSection("Main");
-local UI_TOGGLE = UI_SUBSECTION.AddToggle("testttttttt", function(state)
-   print(tostring(state));
-end, "Left")
-local UI_TOGGLE_TOOLTIP = UI_TOGGLE.AddToolTip("test!")
+-- แท็บที่ 1
+local Server = UI:AddTab("Server"):AddSection():AddSubSection("Main")
+Server:AddToggle("testtttttt", function(state)
+    print(tostring(state))
+end, "Left"):AddToolTip("test!")
 
-local ui = ui.AddSubSection("Main");
+-- แท็บที่ 2
+local Player = UI:AddTab("Player"):AddSection():AddSubSection("Main")
+Player:AddSlider("speed", function(v) print(v) end, "Left", {Minimum = 0, Maximum = 100, Default = 16})
+
