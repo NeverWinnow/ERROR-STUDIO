@@ -1098,11 +1098,11 @@ library.configuration = {
 };
 
 local UI = library.new("METAWARE **TESTING_GAME**");
-local UI_TAB = UI.AddTab("Test Tab")
+local UI_TAB = UI.AddTab("Server")
 local UI_SECTION = UI_TAB.AddSection();
 
-local UI_SUBSECTION = UI_SECTION.AddSubSection("Test SUBSECTION");
-local UI_TOGGLE = UI_SUBSECTION.AddToggle("toggle", function(state)
+local UI_SUBSECTION = UI_SECTION.AddSubSection("Main");
+local UI_TOGGLE = UI_SUBSECTION.AddToggle("testttttttt", function(state)
    print(tostring(state));
 end, "Left")
 local UI_TOGGLE_TOOLTIP = UI_TOGGLE.AddToolTip("test!")
