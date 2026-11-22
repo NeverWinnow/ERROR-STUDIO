@@ -1106,3 +1106,5 @@ local UI_TOGGLE = UI_SUBSECTION.AddToggle("testttttttt", function(state)
    print(tostring(state));
 end, "Left")
 local UI_TOGGLE_TOOLTIP = UI_TOGGLE.AddToolTip("test!")
+
+local ui = ui.AddSubSection("Main");
