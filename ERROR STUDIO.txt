@@ -13081,7 +13081,7 @@ Library:Thread(function()
     end
 end)
 
-Library:Notification("Loaded!", "Menu Admin  by ERROR STUDIO", 10)
+Library:Notification("Loaded!", "by ERROR STUDIO", 10)
 
 
 
