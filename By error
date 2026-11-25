@@ -440,8 +440,7 @@ local Library do
 
             ["Placeholder Text"] = FromRGB(185, 185, 185),
 
-            ["Accent"] = Color3.fromHSV(255, 255, 255)
-
+            ["Accent"] = FromRGB(255, 255, 255)
         }
 
     }
