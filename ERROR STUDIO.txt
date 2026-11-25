@@ -13076,7 +13076,7 @@ end
 
 Library:Thread(function()
     while task.wait() do
-        local Hue = (tick() * 0.2) % 1
+        local Hue = (tick() * 0.1) % 1
         Library:ChangeTheme("Accent", Color3.fromHSV(Hue, 1, 1))
     end
 end)
