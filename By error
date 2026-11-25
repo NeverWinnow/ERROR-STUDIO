@@ -13083,10 +13083,6 @@ end)
 
 Library:Notification("Loaded!", "by  ERROR STUDIO", 10)
 
-
-return Libraryat("%.4f", os.clock() - LoadTick).." seconds to load", 5)
-
-
 getgenv().Library = Library
 
 return Library
