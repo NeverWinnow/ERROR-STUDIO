@@ -12444,7 +12444,7 @@ local Window = Library:Window({
 
 
 
-local Watermark = Library:Watermark("This is a watermark")
+local Watermark = Library:Watermark("By.  ERROR STUDIO")
 
 local KeybindList = Library:KeybindList()
 
@@ -13085,7 +13085,7 @@ Library:Thread(function()
     end
 end)
 
-Library:Notification("Loaded!", "by  ERROR STUDIO", 10)
+Library:Notification("Loaded!", "Menu Admin to Loaded!", 5)
 
 
 getgenv().Library = Library
