@@ -12086,7 +12086,7 @@ local Library do
 
                     for Index, Value in Library.Theme do 
 
-                        ThemesSection:Label(Index):Colorpicker({
+                        local Picker = ThemesSection:Label(Index):Colorpicker({
 
                             Name = Index,
 
@@ -12103,6 +12103,10 @@ local Library do
                             end
 
                         })
+
+if Index == "Accent" then
+    Picker.SetOpen = function() end
+end
 
                     end
 
