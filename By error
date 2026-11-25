@@ -9376,11 +9376,9 @@ local Library do
 
 
 
-        function Watermark:SetVisibility(Bool)
-
-            Items["Watermark"].Instance.Visible = Bool
-
-        end
+        function Watermark:SetText(Text)
+    Items["Text"].Instance.Text = Text
+end
 
 
 
@@ -12444,7 +12442,28 @@ local Window = Library:Window({
 
 
 
-local Watermark = Library:Watermark("By.  ERROR STUDIO")
+local Watermark = Library:Watermark("ERROR STUDIO")
+
+do
+    local Stats = game:GetService("Stats")
+    local RunService = game:GetService("RunService")
+    local Frames, LastTick = 0, os.clock()
+
+    RunService.RenderStepped:Connect(function()
+        Frames += 1
+        local Now = os.clock()
+
+        if Now - LastTick >= 1 then
+            local Ping = 0
+            pcall(function()
+                Ping = math.floor(Stats.Network.ServerStatsItem["Data Ping"]:GetValue())
+            end)
+
+            Watermark:SetText(string.format("ERROR STUDIO | FPS: %d | Ping: %d ms", Frames, Ping))
+            Frames, LastTick = 0, Now
+        end
+    end)
+end
 
 local KeybindList = Library:KeybindList()
 
@@ -13085,7 +13104,7 @@ Library:Thread(function()
     end
 end)
 
-Library:Notification("Loaded!", "Menu Admin to Loaded!", 5)
+Library:Notification("Loaded!", "By  ERROR STUDIO !!", 5)
 
 
 getgenv().Library = Library
