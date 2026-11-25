@@ -440,7 +440,7 @@ local Library do
 
             ["Placeholder Text"] = FromRGB(185, 185, 185),
 
-            ["Accent"] = FromRGB(202, 243, 255)
+            ["Accent"] = FromRGB(255, 255, 255)
 
         }
 
@@ -13082,6 +13082,7 @@ Library:Thread(function()
 end)
 
 Library:Notification("Loaded!", "by  ERROR STUDIO", 10)
+
 
 getgenv().Library = Library
 
