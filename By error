@@ -12459,7 +12459,7 @@ do
                 Ping = math.floor(Stats.Network.ServerStatsItem["Data Ping"]:GetValue())
             end)
 
-            Watermark:SetText(string.format("ERROR STUDIO | FPS: %d | Ping: %d ms", Frames, Ping))
+            Watermark:SetText(string.format("ERROR STUDIO   | FPS: %d   | Ping: %d ms", Frames, Ping))
             Frames, LastTick = 0, Now
         end
     end)
